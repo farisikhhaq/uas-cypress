@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14'
-      - uses: bahmutov/npm-install@v1
+      - run: npm install
       - run: npm run --prefix cypress/integration
       - uses: cypress-io/github-action@v2
         with:
