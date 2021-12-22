@@ -14,3 +14,6 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: npm run --prefix cypress/integration
+      - uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
