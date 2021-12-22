@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
 
-  build-and-test-node14:
+  uas-test:
     runs-on: ubuntu-20.04
     name: UAS CYPRESS
     steps:
