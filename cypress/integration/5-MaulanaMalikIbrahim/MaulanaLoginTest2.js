@@ -12,7 +12,7 @@ it.only('lms jti polinema test', function () {
     .click().should('be.visible')
 
     cy.get('#username.form-control')
-    .type('1941720055').should('be.visible')
+    .type('${{ secrets.MAULANA }}').should('be.visible')
 
     cy.get('#password.form-control')
     .type('1941720022')

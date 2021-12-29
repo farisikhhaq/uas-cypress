@@ -10,10 +10,10 @@ it.only('lms jti polinema test', function () {
     .click()
 
     cy.get('#username.form-control')
-    .type('1941720186')
+    .type('${{ secrets.HISYAM }}')
 
     cy.get('#password.form-control')
-    .type('1941720186')
+    .type('${{ secrets.HISYAM }}')
 
     cy.get('#loginbtn')
     .click()

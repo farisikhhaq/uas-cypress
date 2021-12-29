@@ -6,10 +6,10 @@ describe('Mengisi Data Profil Dengan Salah (Kota = Simbol , Lastname = Simbol)',
         cy.visit('http://lms.jti.polinema.ac.id/login/index.php')
             // Mengarahkan ke id username dengan mengisi nim milik saya
         cy.get('#username')
-            .type('1941720062')
+            .type('${{ secrets.HOST }}')
             // Mengarahkan ke id password dengan mengisi password benar
         cy.get('#password')
-            .type('1941720062')
+            .type('${{ secrets.HOST }}')
             // Melakukan klik button dengan memberi fungsi click
         cy.get('#loginbtn').click()
             // Mengambil id dropdown dengan menambah fungsi click

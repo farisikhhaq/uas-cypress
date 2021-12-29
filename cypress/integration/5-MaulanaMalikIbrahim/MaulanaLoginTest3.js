@@ -15,7 +15,7 @@ it.only('lms jti polinema test', function () {
     .type('Satuskel').should('be.visible')
 
     cy.get('#password.form-control')
-    .type('1941720055')
+    .type('${{ secrets.MAULANA }}')
 
     cy.get('#loginbtn')
     .click().should('be.visible')
